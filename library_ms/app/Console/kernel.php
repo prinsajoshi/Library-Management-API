@@ -16,7 +16,7 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule): void
     {
         // This should be set to run at the desired frequency
-        $schedule->command('books:check-submissions')->everyFifteenMinutes(); // Change frequency to your need
+        $schedule->command('books:check-submissions')->daily(); // Change frequency to your need
     }
 
     protected function commands()
